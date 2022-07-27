@@ -9,7 +9,6 @@
   --appColor: #3c3f45;
 }
 .App {
-  background-image: url();
   mix-blend-mode: overlay;
   background-color: var(--appColor);
   display: flex;
