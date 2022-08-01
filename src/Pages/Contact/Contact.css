@@ -44,3 +44,6 @@ input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
 }
+.contactform .p {
+  font-size: 20px;
+}

@@ -1,0 +1,101 @@
+.home {
+  width: 95%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+*::selection {
+  background-color: red;
+  color: white;
+}
+.header {
+  background-image: url(../../../public/HomeHeaderImage.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+}
+
+.header .content1 {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-left: 50px;
+}
+.header .content1 b {
+  color: #d90c0c;
+}
+
+.about {
+  background-color: rgba(96, 88, 88, 0.188);
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+.about p {
+  font-size: 30px;
+}
+.about h2 {
+  font-size: 50px;
+  color: #d90c0c;
+  font-weight: bold;
+}
+.info {
+  width: 50%;
+}
+
+.content2 {
+  background-color: rgb(26, 26, 34);
+  color: yellow;
+}
+.options {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.options .option1 {
+  background-image: url(../../../public/GainMass.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 50%;
+  border: 2px solid black;
+  padding-top: 60px;
+}
+.options .option2 {
+  background-image: url(../../../public/LosingFat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 50%;
+  border: 2px solid black;
+  padding-top: 60px;
+}
+
+.contact {
+  background-color: black;
+  /*  background-image: url(../../../public/CoachPicture.jpg); */
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  color: rgba(255, 255, 255, 0.827);
+}
+.contact .info {
+  color: rgba(255, 255, 255, 0.827);
+}
+footer {
+  width: auto;
+  height: 400px;
+}
