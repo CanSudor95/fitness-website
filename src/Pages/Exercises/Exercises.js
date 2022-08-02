@@ -116,13 +116,21 @@ function Exercises() {
                     alt={``}
                   />
                   <div className="card-body">
-                    <h5 className="card-title">{name}</h5>
-                    <p className="card-text">
-                      <b>Focused Area: </b>
-                      {bodyPart} <br />
-                      <b>Difficulty: </b>
-                      {difficulty}
-                    </p>
+                    <div className="left">
+                      <h5 className="card-title">{name}</h5>
+                      <p className="card-text">
+                        <b>Focused Area: </b>
+                        {bodyPart} <br />
+                        <b>Difficulty: </b>
+                        {difficulty}
+                      </p>
+                    </div>
+                    <div className="right">
+                      <button className="btn btn-warning">
+                        {" "}
+                        Add to My Exercises
+                      </button>
+                    </div>
                   </div>
                 </div>
               </Link>

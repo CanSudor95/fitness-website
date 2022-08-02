@@ -3,6 +3,9 @@
   align-items: center;
   justify-content: center;
 }
+.container {
+  margin-top: 80px;
+}
 
 .title p {
   font-size: 20px;
