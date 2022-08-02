@@ -1,50 +1,61 @@
 import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 function NavBar() {
   return (
     <>
-      {/*       <nav className="nav">
-        <NavLink to="/" className="nav-brand">
-          <span>The Gym</span>
-        </NavLink> */}
-      <div className="nav">
-        <NavLink
-          to="/"
-          style={({ isActive }) => (isActive ? activeStyle : undefined)}
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="Exercises"
-          style={({ isActive }) => (isActive ? activeStyle : undefined)}
-        >
-          Exercises
-        </NavLink>
-        <NavLink
-          to="About"
-          style={({ isActive }) => (isActive ? activeStyle : undefined)}
-        >
-          About
-        </NavLink>
-        <NavLink
-          to="Contact"
-          style={({ isActive }) => (isActive ? activeStyle : undefined)}
-        >
-          Contact
-        </NavLink>
-        <NavLink
-          to="Login"
-          style={({ isActive }) => (isActive ? activeStyle : undefined)}
-        >
-          Login/SignUp
-        </NavLink>
-      </div>
+      <nav className="nav">
+        <div>
+          <NavLink to="/" className="nav-brand">
+            Logo
+          </NavLink>
+        </div>
+        <div className="nav-child">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "activeStyle" : "inactiveStyle"
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="Exercises"
+            className={({ isActive }) =>
+              isActive ? "activeStyle" : "inactiveStyle"
+            }
+          >
+            Exercises
+          </NavLink>
+          <NavLink
+            to="MyExercises"
+            className={({ isActive }) =>
+              isActive ? "activeStyle" : "inactiveStyle"
+            }
+          >
+            My Exercises
+          </NavLink>
+
+          <NavLink
+            to="Contact"
+            className={({ isActive }) =>
+              isActive ? "activeStyle" : "inactiveStyle"
+            }
+          >
+            Contact
+          </NavLink>
+          <NavLink
+            to="Login"
+            className={({ isActive }) =>
+              isActive ? "activeStyle" : "inactiveStyle"
+            }
+          >
+            Login/SignUp
+          </NavLink>
+        </div>
+      </nav>
     </>
   );
 }
-let activeStyle = {
-  textDecoration: "none",
-  backgroundColor: "#555",
-};
 
 export default NavBar;

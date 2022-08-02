@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./Exercises.css";
 import exercises from "../../Data";
@@ -7,8 +8,12 @@ import exercises from "../../Data";
 import "../../components/Filter/Filter.css";
 
 function Exercises() {
+  /* fullExerciseList is used to keep the original data unchanged. 
+     exerciseList is used to alter the data for our desire
+     searchTerm is used for searchbar */
   const [fullExerciseList, setFullExerciseList] = useState(exercises);
   const [exerciseList, setExerciseList] = useState(exercises);
+  const [searchTerm, setSearchTearm] = useState("");
 
   const filterResult = (filterType) => {
     const result = fullExerciseList.filter((bodyPartFilter) => {
@@ -16,7 +21,19 @@ function Exercises() {
     });
     setExerciseList(result);
   };
-
+  const searchFilter = () => {
+    if (searchTerm === "") {
+      setExerciseList(fullExerciseList);
+    } else {
+      const result = fullExerciseList.filter(
+        (exercise) =>
+          exercise.bodyPart.toLowerCase().includes(searchTerm) ||
+          exercise.name.toLowerCase().includes(searchTerm) ||
+          exercise.difficulty.toLowerCase().includes(searchTerm)
+      );
+      setExerciseList(result);
+    }
+  };
   return (
     <section>
       {/*       <Filter /> */}
@@ -56,28 +73,59 @@ function Exercises() {
         >
           Legs
         </button>
+        <button
+          type="button"
+          className="btn btn-light"
+          onClick={() => filterResult("Full Body")}
+        >
+          Full Body
+        </button>
+        {/* Button Filter Finishes
+        
+        
+        */}
+        {/* Search Bar Part Begins 
+        
+        
+        */}
+        <input
+          type="text"
+          className="search-bar"
+          placeholder="Search..."
+          onChange={(e) => {
+            setSearchTearm(e.target.value.toLowerCase());
+            searchFilter();
+          }}
+        />
+        {/* Search Bar Part Ends */}
       </div>
+
       <div className="row row-cols-1 row-cols-md-4 g-3">
-        {exerciseList.map((exercise) => {
+        {exerciseList.map((exercise, key) => {
           const { id, image, name, difficulty, bodyPart } = exercise;
           return (
             <div key={id} className="col">
-              <div className="card h-100">
-                <img
-                  src={image}
-                  className="card-img-top fittedImage"
-                  alt={``}
-                />
-                <div className="card-body">
-                  <h5 className="card-title">{name}</h5>
-                  <p className="card-text">
-                    <b>Focused Area: </b>
-                    {bodyPart} <br />
-                    <b>Difficulty: </b>
-                    {difficulty}
-                  </p>
+              <Link
+                to={`/Exercises/${id}`}
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                <div className="card h-100">
+                  <img
+                    src={image}
+                    className="card-img-top fittedImage"
+                    alt={``}
+                  />
+                  <div className="card-body">
+                    <h5 className="card-title">{name}</h5>
+                    <p className="card-text">
+                      <b>Focused Area: </b>
+                      {bodyPart} <br />
+                      <b>Difficulty: </b>
+                      {difficulty}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           );
         })}

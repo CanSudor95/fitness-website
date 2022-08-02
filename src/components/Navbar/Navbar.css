@@ -1,0 +1,50 @@
+.activeStyle {
+  color: white;
+  text-decoration: none;
+  background-color: #555;
+}
+.inactiveStyle {
+  color: orange;
+  text-decoration: none;
+}
+
+.nav {
+  text-decoration: none;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 5px;
+  border-bottom: 2px solid black;
+
+  /*Make Navbar sticky*/
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.nav-child {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+  text-align: center;
+  padding-top: 15px;
+}
+.nav-brand {
+  display: flex;
+  background-color: orange;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}

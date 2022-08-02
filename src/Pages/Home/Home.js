@@ -12,7 +12,14 @@ function Home() {
             <p>
               It's time to <b>UNLEASH</b> the beast inside you
             </p>
-            <NavLink to="Login">Join Now</NavLink>
+            <NavLink
+              to="Login"
+              className={({ isActive }) =>
+                isActive ? "activeStyle" : "inactiveStyle"
+              }
+            >
+              Join Now
+            </NavLink>
           </div>
         </div>
       </div>
@@ -34,11 +41,25 @@ function Home() {
       <div className="options">
         <div className="option1">
           <p>Gain Mass </p>
-          <NavLink to="Exercises">Learn More</NavLink>
+          <NavLink
+            to="Exercises"
+            className={({ isActive }) =>
+              isActive ? "activeStyle" : "inactiveStyle"
+            }
+          >
+            Learn More
+          </NavLink>
         </div>
         <div className="option2">
           <p>Lose Fat</p>
-          <NavLink to="Exercises">Learn More</NavLink>
+          <NavLink
+            to="Exercises"
+            className={({ isActive }) =>
+              isActive ? "activeStyle" : "inactiveStyle"
+            }
+          >
+            Learn More
+          </NavLink>
         </div>
       </div>
 
@@ -51,7 +72,14 @@ function Home() {
             personal trainer can create a custom made exercise program for your
             desired goal. <br />
           </p>
-          <NavLink to="Contact">Contact Us</NavLink>
+          <NavLink
+            to="Contact"
+            className={({ isActive }) =>
+              isActive ? "activeStyle" : "inactiveStyle"
+            }
+          >
+            Contact Us
+          </NavLink>
         </div>
       </div>
       {/* Content 4 */}

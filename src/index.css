@@ -21,20 +21,6 @@ code {
   text-align: center;
 }
 
-.nav {
-  text-decoration: none;
-  background-color: #333;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 2rem;
-  padding: 0 1rem;
-  margin-bottom: 10px;
-  text-align: center;
-  padding: 5px;
-}
-
 .site-title {
   font-size: 2rem;
 }
