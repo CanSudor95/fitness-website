@@ -13,7 +13,7 @@ function Exercises() {
      searchTerm is used for searchbar */
   const [fullExerciseList, setFullExerciseList] = useState(exercises);
   const [exerciseList, setExerciseList] = useState(exercises);
-  const [searchTerm, setSearchTearm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
   const filterResult = (filterType) => {
     const result = fullExerciseList.filter((bodyPartFilter) => {
@@ -38,6 +38,15 @@ function Exercises() {
     <section>
       {/*       <Filter /> */}
       <div className="filter-container">
+        <div className="fitnessHeader">
+          <div className="content1">
+            <div>
+              <p>
+                It's time to <b>UNLEASH</b> the beast inside you
+              </p>
+            </div>
+          </div>
+        </div>
         <button
           type="button"
           className="btn btn-light"
@@ -93,14 +102,14 @@ function Exercises() {
           className="search-bar"
           placeholder="Search..."
           onChange={(e) => {
-            setSearchTearm(e.target.value.toLowerCase());
+            setSearchTerm(e.target.value.toLowerCase());
             searchFilter();
           }}
         />
         {/* Search Bar Part Ends */}
       </div>
 
-      <div className="row row-cols-1 row-cols-md-4 g-3">
+      <div className="row row-cols-1 row-cols-md-4 g-3 ">
         {exerciseList.map((exercise, key) => {
           const { id, image, name, difficulty, bodyPart } = exercise;
           return (
@@ -127,7 +136,6 @@ function Exercises() {
                     </div>
                     <div className="right">
                       <button className="btn btn-warning">
-                        {" "}
                         Add to My Exercises
                       </button>
                     </div>

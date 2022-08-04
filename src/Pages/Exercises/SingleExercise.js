@@ -7,7 +7,7 @@ function SingleExercise() {
   const { exerciseId } = useParams();
   const exercise = exercises.find((exercise) => exercise.id === exerciseId);
 
-  const { id, image, name, difficulty, bodyPart, description } = exercise;
+  const { image, name, difficulty, bodyPart, description } = exercise;
   return (
     <div className="container">
       <div className="title">

@@ -31,7 +31,7 @@
   padding-left: 50px;
 }
 .header .content1 b {
-  color: #d90c0c;
+  color: orange;
 }
 
 .about {
@@ -55,13 +55,16 @@
 }
 
 .content2 {
-  background-color: rgb(26, 26, 34);
-  color: yellow;
+  padding: 2em 0;
+  background: linear-gradient(to right, #000000 0%, #ffffff 113%);
+  color: white;
+  font-size: 24px;
 }
 .options {
   display: flex;
   text-align: center;
   justify-content: center;
+  padding: 50px 40px;
 }
 .options .option1 {
   background-image: url(../../../public/GainMass.jpg);
@@ -70,7 +73,7 @@
   height: 40vh;
   width: 50%;
   border: 2px solid black;
-  padding-top: 60px;
+  padding: 60px;
 }
 .options .option2 {
   background-image: url(../../../public/LosingFat.jpg);
@@ -79,6 +82,29 @@
   height: 40vh;
   width: 50%;
   border: 2px solid black;
+  padding-top: 60px;
+}
+.options .Image1 {
+  background-image: url(../../../public/GainMass.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 40vh;
+  width: 40%;
+  padding-top: 60px;
+}
+.options .Image2 {
+  background-image: url(../../../public/LosingFat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 40vh;
+  width: 40%;
+  padding-top: 60px;
+}
+.options .text {
+  height: 40vh;
+  width: 60%;
   padding-top: 60px;
 }
 
@@ -107,4 +133,20 @@ footer {
 .inactiveStyle {
   color: orange;
   text-decoration: none;
+}
+
+.loginInactiveStyle {
+  font-size: 24px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 2px solid white;
+  background-color: orange;
+  border-radius: 18px;
+  color: white;
+}
+
+.loginInactiveStyle:hover {
+  border: 1px solid orange;
+  background-color: gray;
+  color: orange;
 }
