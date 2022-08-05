@@ -28,6 +28,14 @@ function NavBar() {
             Exercises
           </NavLink>
           <NavLink
+            to="Exercises1"
+            className={({ isActive }) =>
+              isActive ? "activeStyle" : "inactiveStyle"
+            }
+          >
+            Exercises1
+          </NavLink>
+          <NavLink
             to="MyExercises"
             className={({ isActive }) =>
               isActive ? "activeStyle" : "inactiveStyle"

@@ -1,6 +1,6 @@
-.container {
-  margin-top: 50px;
+.cart-items {
+  margin-top: 100px;
 }
-.warning {
-  background-color: red;
+.cart-items-header {
+  background-color: white;
 }
