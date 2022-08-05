@@ -42,7 +42,10 @@ function Exercises() {
           <div className="content1">
             <div>
               <p>
-                It's time to <b>UNLEASH</b> the beast inside you
+                <b>GET</b> FIT
+              </p>
+              <p style={{ color: "orange" }}>
+                <b>GET</b> GOING
               </p>
             </div>
           </div>
