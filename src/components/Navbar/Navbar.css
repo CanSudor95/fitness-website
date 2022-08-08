@@ -17,9 +17,9 @@
   align-items: stretch;
   gap: 2rem;
   padding: 0 1rem;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   text-align: center;
-  padding: 15px;
+  padding: 5px;
   border-bottom: 2px solid black;
 
   /*Make Navbar sticky*/
@@ -32,7 +32,7 @@
   text-decoration: none;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   gap: 2rem;
   padding: 0 1rem;
   text-align: center;
@@ -40,11 +40,10 @@
 }
 .nav-brand {
   display: flex;
-  background-color: orange;
   color: white;
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 20px;
 }

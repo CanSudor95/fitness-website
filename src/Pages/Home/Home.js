@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function Home() {
   return (
     <section className="home">
-      {/* Content 1 */}
+      {/* Header Part Starts */}
       <div className="header">
         <div className="content1">
           <div>
@@ -23,18 +23,86 @@ function Home() {
           </div>
         </div>
       </div>
+      {/* Header Part Finishes  */}
 
-      {/* <div className="about">
+      {/* About Part Starts */}
+      <div className="about">
+        <h2>Why Fitness Is Important In Your Life?</h2>
+        <hr />
         <div className="info">
-          <h2>ABOUT US</h2>
-          <p>
-            We provide a online personal exercise library where you, or your
-            personal trainer can create a custom made exercise program for your
-            desired goal. <br />
-          </p>
-          <NavLink to="About">Learn More</NavLink>
+          <img
+            src="images/jakob-owens-unsplash.jpg"
+            style={{ width: "auto", height: "500px", marginRight: "30px" }}
+            alt=""
+          />
+          <div>
+            <div className="info-body">
+              <img
+                className="info-logo"
+                src={"images/icons8-happy-48.png"}
+                alt={"no image"}
+              />
+              <div className="info-text">
+                <h3>Happy Body Happy Life</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae hic officia iste ipsa, rerum reiciendis sequi harum
+                  esse dolorum dolor.
+                </p>
+              </div>
+            </div>
+            <div className="info-body">
+              <img
+                className="info-logo"
+                src={"images/icons8-chevron-24.png"}
+                alt={"no image"}
+              />
+              <div className="info-text">
+                <h3>More Energy For Everything</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae hic officia iste ipsa, rerum reiciendis sequi harum
+                  esse dolorum dolor.
+                </p>
+              </div>
+            </div>
+            <div className="info-body">
+              <img
+                className="info-logo"
+                src={"images/icons8-ok-50.png"}
+                alt={"no image"}
+              />
+              <div className="info-text">
+                <h3>Less Limits In The Life</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae hic officia iste ipsa, rerum reiciendis sequi harum
+                  esse dolorum dolor.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div> */}
+      </div>
+      {/* About Part Finishes */}
+      {/* SignUP Part Starts */}
+      <div className="SignUp">
+        <div className="SignUpBar">
+          <img
+            className="info-logo"
+            src={"images/icons8-mail-50.png"}
+            alt={"no image"}
+          />
+          <div>
+            <p>
+              SIGNUP TODAY <br />
+              for the Latest News, Promotional Offers and Exclusive Discounts
+            </p>
+          </div>
+          <input type="text" placeholder="your email address" />
+          <input type="button" value={"SignUp"} />
+        </div>
+      </div>
 
       {/* Content 2 */}
       <div className="content2">
@@ -46,7 +114,15 @@ function Home() {
         <div className="options">
           <div className="Image1"></div>
           <div className="text">
-            <h2 style={{ color: "orange", fontSize: "40px" }}>Gain Mass</h2>
+            <h2
+              style={{
+                color: "orange",
+                fontSize: "40px",
+                paddingBottom: "20px",
+              }}
+            >
+              Gain Mass
+            </h2>
             <p style={{ paddingBottom: "10px" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
               aliquam mollitia quisquam nulla a totam similique dolore natus at
@@ -67,7 +143,15 @@ function Home() {
         </div>
         <div className="options">
           <div className="text">
-            <h2 style={{ color: "orange", fontSize: "40px" }}>Lose Weight</h2>
+            <h2
+              style={{
+                color: "orange",
+                fontSize: "40px",
+                paddingBottom: "20px",
+              }}
+            >
+              Lose Weight
+            </h2>
             <p style={{ paddingBottom: "10px" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
               aliquam mollitia quisquam nulla a totam similique dolore natus at
@@ -92,49 +176,30 @@ function Home() {
       </div>
       <div className="options">
         <div className="option1">
-          <p>Gain Mass </p>
+          <p>Beginner Exercises</p>
           <NavLink
             to="Exercises"
             className={({ isActive }) =>
               isActive ? "activeStyle" : "inactiveStyle"
             }
           >
-            Learn More
+            Begin Now!
           </NavLink>
         </div>
         <div className="option2">
-          <p>Lose Fat</p>
+          <p>Advanced Exercises</p>
           <NavLink
             to="Exercises"
             className={({ isActive }) =>
               isActive ? "activeStyle" : "inactiveStyle"
             }
           >
-            Learn More
+            Begin Now!
           </NavLink>
         </div>
       </div>
 
       {/* Content 3 */}
-      <div className="contact">
-        <div className="info">
-          <h2>CONTACT US</h2>
-          <p>
-            We provide a online personal exercise library where you, or your
-            personal trainer can create a custom made exercise program for your
-            desired goal. <br />
-          </p>
-          <NavLink
-            to="Contact"
-            className={({ isActive }) =>
-              isActive ? "activeStyle" : "inactiveStyle"
-            }
-          >
-            Contact Us
-          </NavLink>
-        </div>
-      </div>
-      {/* Content 4 */}
     </section>
   );
 }

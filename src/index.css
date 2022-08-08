@@ -26,7 +26,7 @@ code {
 }
 
 .aboutpage {
-  background-image: url(../public/aboutBackImage.jpg);
+  background-image: url(../public/images/aboutBackImage.jpg);
   background-size: cover;
   /*opacity: 0.4;*/
   width: 100%;

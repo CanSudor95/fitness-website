@@ -10,7 +10,7 @@
   color: white;
 }
 .header {
-  background-image: url(../../../public/HomeHeaderImage.jpg);
+  background-image: url(../../../public/images/HomeHeaderImage.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,27 +33,96 @@
 .header .content1 b {
   color: orange;
 }
+/* END OF HEADER CONTENT*/
 
+/*START OF ABOUT CONTENT*/
 .about {
   background-color: rgba(96, 88, 88, 0.188);
   height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 0;
+  padding: 50px 0;
+  min-height: 400px;
 }
 .about p {
   font-size: 30px;
 }
 .about h2 {
-  font-size: 50px;
-  color: #d90c0c;
+  font-size: 40px;
+  color: aqua;
+  font-weight: bold;
+}
+.about h3 {
+  font-size: 30px;
+  color: white;
   font-weight: bold;
 }
 .info {
-  width: 50%;
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 240px;
+}
+.info-body {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.info-logo {
+  border: 6px solid orange;
+  border-radius: 50%;
+  padding: 10px;
+  height: auto;
+  width: 100px;
+}
+.info-text {
+  margin-left: 30px;
+}
+.info-text h3 {
+  padding-bottom: 10px;
+  color: aqua;
+}
+.info-text p {
+  font-size: 20px;
+}
+/*END OF ABOUT CONTENT*/
+
+/*START OF SIGNUP CONTENT*/
+.SignUp {
+  background-color: orange;
+  height: auto;
+  padding: 20px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SignUpBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  border: 4px solid white;
+  border-radius: 80px;
+  margin: 0 30px;
+  width: 70%;
+}
+.SignUpBar h2 {
+  color: white;
+}
+.SignUpBar p {
+  font-size: 20px;
+  color: white;
+  margin: 0 10px;
+}
+.SignUpBar input {
+  font-size: 20px;
+  width: 20%;
+  border-radius: 0 15px 0 15px;
 }
 
+/*END OF SIGNUP CONTENT*/
 .content2 {
   padding: 2em 0;
   background: linear-gradient(to right, #000000 0%, #ffffff 113%);
@@ -65,27 +134,29 @@
   text-align: center;
   justify-content: center;
   padding: 50px 40px;
+  color: black;
 }
 .options .option1 {
-  background-image: url(../../../public/GainMass.jpg);
+  background-image: url(../../../public/images/fitness-beginner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40vh;
+  background-position: 0 -50px;
+  height: 50vh;
   width: 50%;
   border: 2px solid black;
   padding: 60px;
 }
 .options .option2 {
-  background-image: url(../../../public/LosingFat.jpg);
+  background-image: url(../../../public/images/fitness-advanced.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40vh;
+  height: 50vh;
   width: 50%;
   border: 2px solid black;
   padding-top: 60px;
 }
 .options .Image1 {
-  background-image: url(../../../public/GainMass.jpg);
+  background-image: url(../../../public/images/GainMass.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -94,7 +165,7 @@
   padding-top: 60px;
 }
 .options .Image2 {
-  background-image: url(../../../public/LosingFat.jpg);
+  background-image: url(../../../public/images/LosingFat.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -124,15 +195,6 @@
 footer {
   width: auto;
   height: 400px;
-}
-.activeStyle {
-  color: white;
-  text-decoration: none;
-  background-color: #555;
-}
-.inactiveStyle {
-  color: orange;
-  text-decoration: none;
 }
 
 .loginInactiveStyle {
