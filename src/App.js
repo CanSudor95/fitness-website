@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Contact from "./Pages/Contact/Contact";
 import Exercises from "./Pages/Exercises/Exercises";
-import Exercises1 from "./Pages/Exercises/Exercises1";
 import SingleExercise from "./Pages/Exercises/SingleExercise";
 import MyExercises from "./Pages/Exercises/MyExercises";
 import Login from "./Pages/Login/Login";
@@ -15,27 +14,26 @@ import Footer from "./components/Footer/Footer";
 import exercises from "./Data";
 
 function App() {
-  const [exerciseList, setExerciseList] = useState([
-    {
-      id: "1",
-      name: "Crunch",
-      bodyPart: "Abs",
-      difficulty: "Beginner",
-    },
-    {
-      id: "2",
-      name: "Chest Press",
-      bodyPart: "Chest",
-      equipment: "Barbell",
-      difficulty: "Advanced",
-    },
-  ]);
-  const arr = [1, 2, 3];
   const { allExercises } = exercises;
-  let number = 0;
-  const handleAddExercise = () => {
-    number++;
-    console.log(number);
+  const [exerciseList, setExerciseList] = useState([]);
+
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
+  const handleAddExercise = (exercise) => {
+    const exerciseExist = exerciseList.find((item) => item.id === exercise.id);
+    if (exerciseExist) {
+      debugger;
+    } else {
+      setExerciseList([...exerciseList, { ...exercise }]);
+      console.log(exerciseList);
+    }
+  };
+  const handleRemoveExercise = (exercise) => {
+    setExerciseList(exerciseList.filter((item) => item.id !== exercise.id));
   };
   return (
     <BrowserRouter>
@@ -45,21 +43,18 @@ function App() {
         <Route path="Contact" element={<Contact />} />
         <Route
           path="Exercises"
-          element={<Exercises allExercises={allExercises} />}
-        />
-        <Route
-          path="Exercises1"
           element={
-            <Exercises1
+            <Exercises
               allExercises={allExercises}
               handleAddExercise={handleAddExercise}
+              handleRemoveExercise={handleRemoveExercise}
             />
           }
         />
         <Route path="/Exercises/:exerciseId" element={<SingleExercise />} />
         <Route
           path="MyExercises"
-          element={<MyExercises arr={arr} exerciseList={exerciseList} />}
+          element={<MyExercises exerciseList={exerciseList} />}
         />
         <Route path="Login" element={<Login />} />
         <Route path="*" element={<Error />} />

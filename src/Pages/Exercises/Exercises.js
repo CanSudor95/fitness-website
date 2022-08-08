@@ -7,7 +7,7 @@ import exercises from "../../Data";
 /* import Filter from "../../components/Filter/Filter"; */
 import "../../components/Filter/Filter.css";
 
-function Exercises() {
+function Exercises1({ handleAddExercise, handleRemoveExercise }) {
   /* fullExerciseList is used to keep the original data unchanged. 
      exerciseList is used to alter the data for our desire
      searchTerm is used for searchbar */
@@ -34,10 +34,16 @@ function Exercises() {
       setExerciseList(result);
     }
   };
+
+  const toggleButton = (key) => {
+    exerciseList[key].toggled = !exerciseList[key].toggled;
+    setExerciseList(exerciseList);
+    console.log(exerciseList[key]);
+  };
   return (
     <section>
       {/*       <Filter /> */}
-      <div className="filter-container">
+      <div className="empy">
         <div className="fitnessHeader">
           <div className="content1">
             <div>
@@ -117,17 +123,22 @@ function Exercises() {
           const { id, image, name, difficulty, bodyPart } = exercise;
           return (
             <div key={id} className="col">
-              <Link
-                to={`/Exercises/${id}`}
-                style={{ textDecoration: "none", color: "black" }}
-              >
-                <div className="card h-100">
+              <div className="card h-100">
+                <Link
+                  to={`/Exercises/${id}`}
+                  style={{ textDecoration: "none", color: "black" }}
+                >
                   <img
                     src={image}
                     className="card-img-top fittedImage"
                     alt={``}
                   />
-                  <div className="card-body">
+                </Link>
+                <div className="card-body">
+                  <Link
+                    to={`/Exercises/${id}`}
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
                     <div className="left">
                       <h5 className="card-title">{name}</h5>
                       <p className="card-text">
@@ -137,14 +148,31 @@ function Exercises() {
                         {difficulty}
                       </p>
                     </div>
-                    <div className="right">
-                      <button className="btn btn-warning">
-                        Add to My Exercises
+                  </Link>
+                  <div className="right">
+                    {exerciseList[key].toggled ? (
+                      <button
+                        onClick={() => {
+                          handleRemoveExercise(exercise);
+                          toggleButton(key);
+                        }}
+                      >
+                        Remove Exercise
                       </button>
-                    </div>
+                    ) : (
+                      <button
+                        className="btn btn-warning"
+                        onClick={() => {
+                          handleAddExercise(exercise);
+                          toggleButton(key);
+                        }}
+                      >
+                        Add Exercise
+                      </button>
+                    )}
                   </div>
                 </div>
-              </Link>
+              </div>
             </div>
           );
         })}
@@ -153,4 +181,4 @@ function Exercises() {
   );
 }
 
-export default Exercises;
+export default Exercises1;

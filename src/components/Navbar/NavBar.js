@@ -7,6 +7,7 @@ function NavBar() {
       <div>
         <NavLink to="/" className="nav-brand">
           <img src="images/icons8-workout-64.png" alt="" />
+          <p>THE GYM</p>
         </NavLink>
       </div>
       <div className="nav-child">
@@ -26,14 +27,7 @@ function NavBar() {
         >
           Exercises
         </NavLink>
-        <NavLink
-          to="Exercises1"
-          className={({ isActive }) =>
-            isActive ? "activeStyle" : "inactiveStyle"
-          }
-        >
-          Exercises1
-        </NavLink>
+
         <NavLink
           to="MyExercises"
           className={({ isActive }) =>

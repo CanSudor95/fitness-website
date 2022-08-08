@@ -1,6 +1,7 @@
 const exercises = [
   {
     id: "1",
+    toggled: false,
     name: "Crunch",
     bodyPart: "Abs",
     equipment: "None",
@@ -12,6 +13,7 @@ const exercises = [
   },
   {
     id: "2",
+    toggled: false,
     name: "Chest Press",
     bodyPart: "Chest",
     equipment: "Barbell, Bench",
@@ -23,6 +25,7 @@ const exercises = [
   },
   {
     id: "3",
+    toggled: false,
     name: "Standing Biceps Curl",
     bodyPart: "Arms",
     equipment: "Dumbell",
@@ -34,6 +37,7 @@ const exercises = [
   },
   {
     id: "4",
+    toggled: false,
     name: "Pushup",
     bodyPart: "Chest",
     equipment: "Dumbell",
@@ -45,6 +49,7 @@ const exercises = [
   },
   {
     id: "5",
+    toggled: false,
     name: "Front Squats",
     bodyPart: "Legs",
     equipment: "Dumbell",
@@ -56,6 +61,7 @@ const exercises = [
   },
   {
     id: "6",
+    toggled: false,
     name: "Lateral Raise",
     bodyPart: "Shoulder",
     equipment: "Dumbell",
@@ -67,6 +73,7 @@ const exercises = [
   },
   {
     id: "7",
+    toggled: false,
     name: "Dumbell Upright Row",
     bodyPart: "Shoulder",
     equipment: "Dumbell",
@@ -78,6 +85,7 @@ const exercises = [
   },
   {
     id: "8",
+    toggled: false,
     name: "Seated Dumbell Raise",
     bodyPart: "Arms",
     equipment: "Dumbell",
@@ -89,6 +97,7 @@ const exercises = [
   },
   {
     id: "9",
+    toggled: false,
     name: "Dumbell Raise",
     bodyPart: "Arms",
     equipment: "Dumbell",
@@ -100,6 +109,7 @@ const exercises = [
   },
   {
     id: "10",
+    toggled: false,
     name: "Seated Dumbell Shoulder Raise",
     bodyPart: "Arms",
     equipment: "Dumbell",
@@ -111,6 +121,7 @@ const exercises = [
   },
   {
     id: "11",
+    toggled: false,
     name: "Lying Dumbell Shoulder Raise",
     bodyPart: "Chest",
     equipment: "Dumbell",
@@ -122,6 +133,7 @@ const exercises = [
   },
   {
     id: "12",
+    toggled: false,
     name: "Jumping Squat",
     bodyPart: "Legs",
     equipment: "Nothing",
@@ -133,6 +145,7 @@ const exercises = [
   },
   {
     id: "13",
+    toggled: false,
     name: "Running Man",
     bodyPart: "Full Body",
     equipment: "Nothing",
@@ -144,6 +157,7 @@ const exercises = [
   },
   {
     id: "14",
+    toggled: false,
     name: "Jumping Man",
     bodyPart: "Full Body",
     equipment: "Nothing",
@@ -155,6 +169,7 @@ const exercises = [
   },
   {
     id: "15",
+    toggled: false,
     name: "Jumping Rope",
     bodyPart: "Full Body",
     equipment: "Jumping Rope",
@@ -166,6 +181,7 @@ const exercises = [
   },
   {
     id: "16",
+    toggled: false,
     name: "KettleBell Swing",
     bodyPart: "Full Body",
     equipment: "KettleBell",
@@ -177,6 +193,7 @@ const exercises = [
   },
   {
     id: "17",
+    toggled: false,
     name: "Side Movement",
     bodyPart: "Abs",
     equipment: "Nothing",
@@ -188,6 +205,7 @@ const exercises = [
   },
   {
     id: "18",
+    toggled: false,
     name: "Russian Swing",
     bodyPart: "Abs",
     equipment: "Nothing",
@@ -199,6 +217,7 @@ const exercises = [
   },
   {
     id: "19",
+    toggled: false,
     name: "Cross Leg Swing",
     bodyPart: "Legs",
     equipment: "Nothing",
@@ -210,6 +229,7 @@ const exercises = [
   },
   {
     id: "20",
+    toggled: false,
     name: "Bicycle",
     bodyPart: "Legs",
     equipment: "Bicycle",

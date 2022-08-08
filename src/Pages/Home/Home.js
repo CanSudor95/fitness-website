@@ -99,7 +99,7 @@ function Home() {
               for the Latest News, Promotional Offers and Exclusive Discounts
             </p>
           </div>
-          <input type="text" placeholder="your email address" />
+          <input type="email" placeholder="your email address" />
           <input type="button" value={"SignUp"} />
         </div>
       </div>

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./MyExercises.css";
 
-function MyExercises({ arr, exerciseList }) {
+function MyExercises({ exerciseList }) {
   var size = Object.keys(exerciseList).length;
   console.log(exerciseList);
   console.log(size);
@@ -26,6 +27,7 @@ function MyExercises({ arr, exerciseList }) {
                 <th>Exercise Name</th>
                 <th>Exercise Area</th>
                 <th>Exercise Difficulty</th>
+                <th>Exercise Page</th>
               </tr>
             </thead>
             <tbody>
@@ -35,6 +37,14 @@ function MyExercises({ arr, exerciseList }) {
                     <td>{exercise.name}</td>
                     <td>{exercise.bodyPart}</td>
                     <td>{exercise.difficulty}</td>
+                    <td>
+                      <Link
+                        to={`/Exercises/${exercise.id}`}
+                        style={{ textDecoration: "none", color: "black" }}
+                      >
+                        <button>Check the Exercise</button>
+                      </Link>
+                    </td>
                   </tr>
                 );
               })}
