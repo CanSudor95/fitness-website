@@ -1,6 +1,34 @@
+.no-item {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+.no-item button {
+  background-color: orange;
+  font-size: 32px;
+  padding: 10px 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  color: white;
+}
+.table {
+  text-align: center;
+}
 .cart-items {
   margin-top: 100px;
 }
 .cart-items-header {
   background-color: white;
+}
+.remove-column {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.remove-button {
+  background-color: red;
+  border-radius: 50%;
 }

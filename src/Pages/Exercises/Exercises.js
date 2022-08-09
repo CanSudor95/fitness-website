@@ -2,19 +2,22 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./Exercises.css";
-import exercises from "../../Data";
 /*if filter need to be used as an external component*/
 /* import Filter from "../../components/Filter/Filter"; */
 import "../../components/Filter/Filter.css";
 
-function Exercises1({ handleAddExercise, handleRemoveExercise }) {
+function Exercises1({
+  allExercises,
+  handleAddExercise,
+  handleRemoveExercise,
+  toggleButton,
+}) {
   /* fullExerciseList is used to keep the original data unchanged. 
      exerciseList is used to alter the data for our desire
      searchTerm is used for searchbar */
-  const [fullExerciseList, setFullExerciseList] = useState(exercises);
-  const [exerciseList, setExerciseList] = useState(exercises);
+  const [fullExerciseList, setFullExerciseList] = useState(allExercises);
+  const [exerciseList, setExerciseList] = useState(allExercises);
   const [searchTerm, setSearchTerm] = useState("");
-
   const filterResult = (filterType) => {
     const result = fullExerciseList.filter((bodyPartFilter) => {
       return bodyPartFilter.bodyPart === filterType;
@@ -35,11 +38,11 @@ function Exercises1({ handleAddExercise, handleRemoveExercise }) {
     }
   };
 
-  const toggleButton = (key) => {
+  /*   const toggleButton = (key) => {
     exerciseList[key].toggled = !exerciseList[key].toggled;
     setExerciseList(exerciseList);
     console.log(exerciseList[key]);
-  };
+  }; */
   return (
     <section>
       {/*       <Filter /> */}
@@ -152,6 +155,7 @@ function Exercises1({ handleAddExercise, handleRemoveExercise }) {
                   <div className="right">
                     {exerciseList[key].toggled ? (
                       <button
+                        className="button-remove"
                         onClick={() => {
                           handleRemoveExercise(exercise);
                           toggleButton(key);
@@ -161,7 +165,7 @@ function Exercises1({ handleAddExercise, handleRemoveExercise }) {
                       </button>
                     ) : (
                       <button
-                        className="btn btn-warning"
+                        className="button-add"
                         onClick={() => {
                           handleAddExercise(exercise);
                           toggleButton(key);

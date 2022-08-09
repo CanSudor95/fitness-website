@@ -2,8 +2,8 @@ import React from "react";
 import "./Login.css";
 function Login() {
   return (
-    <div className="contactpage">
-      <div className="contactform">
+    <div className="loginpage">
+      <div className="loginbar">
         <div className="loginheader">
           <p>Login</p>
         </div>

@@ -14,7 +14,8 @@ import Footer from "./components/Footer/Footer";
 import exercises from "./Data";
 
 function App() {
-  const { allExercises } = exercises;
+  const allExercises = exercises;
+
   const [exerciseList, setExerciseList] = useState([]);
 
   const [modal, setModal] = useState(false);
@@ -35,6 +36,11 @@ function App() {
   const handleRemoveExercise = (exercise) => {
     setExerciseList(exerciseList.filter((item) => item.id !== exercise.id));
   };
+  const toggleButton = (key) => {
+    allExercises[key].toggled = !allExercises[key].toggled;
+    console.log(allExercises[key]);
+  };
+
   return (
     <BrowserRouter>
       <NavBar />
@@ -48,13 +54,20 @@ function App() {
               allExercises={allExercises}
               handleAddExercise={handleAddExercise}
               handleRemoveExercise={handleRemoveExercise}
+              toggleButton={toggleButton}
             />
           }
         />
         <Route path="/Exercises/:exerciseId" element={<SingleExercise />} />
         <Route
           path="MyExercises"
-          element={<MyExercises exerciseList={exerciseList} />}
+          element={
+            <MyExercises
+              exerciseList={exerciseList}
+              handleRemoveExercise={handleRemoveExercise}
+              toggleButton={toggleButton}
+            />
+          }
         />
         <Route path="Login" element={<Login />} />
         <Route path="*" element={<Error />} />
