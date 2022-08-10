@@ -80,3 +80,6 @@ section {
   color: white;
   font-weight: bold;
 }
+.col {
+  box-shadow: 0 0 15px 3px black;
+}
