@@ -6,7 +6,7 @@ import "./Exercises.css";
 /* import Filter from "../../components/Filter/Filter"; */
 import "../../components/Filter/Filter.css";
 
-function Exercises1({
+function Exercises({
   allExercises,
   handleAddExercise,
   handleRemoveExercise,
@@ -121,7 +121,7 @@ function Exercises1({
         {/* Search Bar Part Ends */}
       </div>
 
-      <div className="row row-cols-1 row-cols-md-4 g-3 ">
+      {/* <div className="row row-cols-1 row-cols-md-4 g-3 ">
         {exerciseList.map((exercise, key) => {
           const { id, image, name, difficulty, bodyPart } = exercise;
           return (
@@ -180,9 +180,55 @@ function Exercises1({
             </div>
           );
         })}
+      </div> */}
+      <div className="wrapper-grid">
+        {exerciseList.map((exercise, key) => {
+          const { id, image, name, difficulty, bodyPart } = exercise;
+          return (
+            <div className="container-grid">
+              <div className="card-image">
+                <img src={image} alt={""} />
+              </div>
+              <div className="container--body">
+                <div className="left">
+                  <h5 className="title">{name}</h5>
+                  <p className="text">
+                    <b>Focused Area: </b>
+                    {bodyPart} <br />
+                    <b>Difficulty: </b>
+                    {difficulty}
+                  </p>
+                </div>
+                <div className="right">
+                  {exerciseList[key].toggled ? (
+                    <button
+                      className="button-remove"
+                      onClick={() => {
+                        handleRemoveExercise(exercise);
+                        toggleButton(key);
+                      }}
+                    >
+                      Remove Exercise
+                    </button>
+                  ) : (
+                    <button
+                      className="button-add"
+                      onClick={() => {
+                        handleAddExercise(exercise);
+                        toggleButton(key);
+                      }}
+                    >
+                      Add Exercise
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
 }
 
-export default Exercises1;
+export default Exercises;
