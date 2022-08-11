@@ -186,19 +186,29 @@ function Exercises({
           const { id, image, name, difficulty, bodyPart } = exercise;
           return (
             <div className="container-grid">
-              <div className="card-image">
-                <img src={image} alt={""} />
-              </div>
-              <div className="container--body">
-                <div className="left">
-                  <h5 className="title">{name}</h5>
-                  <p className="text">
-                    <b>Focused Area: </b>
-                    {bodyPart} <br />
-                    <b>Difficulty: </b>
-                    {difficulty}
-                  </p>
+              <Link
+                to={`/Exercises/${id}`}
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                <div className="card-image">
+                  <img src={image} alt={""} />
                 </div>
+              </Link>
+              <div className="container--body">
+                <Link
+                  to={`/Exercises/${id}`}
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <div className="left">
+                    <h5 className="title">{name}</h5>
+                    <p className="text">
+                      <b>Focused Area: </b>
+                      {bodyPart} <br />
+                      <b>Difficulty: </b>
+                      {difficulty}
+                    </p>
+                  </div>
+                </Link>
                 <div className="right">
                   {exerciseList[key].toggled ? (
                     <button
