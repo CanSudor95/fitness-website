@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import react, { useState } from "react";
 
-function NavBar() {
+function NavBar({ toggle, LogOut }) {
   return (
     <nav className="nav">
       <div>
@@ -45,14 +46,25 @@ function NavBar() {
         >
           Contact
         </NavLink>
-        <NavLink
-          to="Login"
-          className={({ isActive }) =>
-            isActive ? "activeStyle" : "inactiveStyle"
-          }
-        >
-          Login/SignUp
-        </NavLink>
+        {toggle ? (
+          <NavLink
+            to="Login"
+            className={({ isActive }) =>
+              isActive ? "activeStyle" : "inactiveStyle"
+            }
+          >
+            Login/SignUp
+          </NavLink>
+        ) : (
+          <button
+            onClick={(e) => {
+              LogOut();
+            }}
+            className="activeStyle"
+          >
+            Logout
+          </button>
+        )}
       </div>
     </nav>
   );

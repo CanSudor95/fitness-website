@@ -53,3 +53,7 @@ input[type="submit"]:hover {
 .contactform .p {
   font-size: 20px;
 }
+.error {
+  color: red;
+  padding: 0.5rem 0;
+}

@@ -10,16 +10,16 @@ function Home() {
         <div className="content1">
           <div>
             <p>
-              It's time to <b>UNLEASH</b> the beast inside you
+              It's Time to <b>UNLEASH</b> the Beast Inside of You
             </p>
-            <NavLink
+            {/* <NavLink
               to="Login"
               className={({ isActive }) =>
                 isActive ? "activeStyle" : "loginInactiveStyle"
               }
             >
               Join Now
-            </NavLink>
+            </NavLink> */}
           </div>
         </div>
       </div>
@@ -32,7 +32,12 @@ function Home() {
         <div className="info">
           <img
             src="images/jakob-owens-unsplash.jpg"
-            style={{ width: "auto", height: "500px", marginRight: "30px" }}
+            style={{
+              width: "auto",
+              height: "500px",
+              marginRight: "30px",
+              borderRadius: "5px",
+            }}
             alt=""
           />
           <div>
