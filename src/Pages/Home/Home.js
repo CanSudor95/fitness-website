@@ -121,12 +121,12 @@ function Home() {
           <div className="text">
             <h2
               style={{
-                color: "orange",
+                color: "#ff4d00",
                 fontSize: "40px",
                 paddingBottom: "20px",
               }}
             >
-              Gain Mass
+              GAIN MASS
             </h2>
             <p style={{ paddingBottom: "10px" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
@@ -150,12 +150,12 @@ function Home() {
           <div className="text">
             <h2
               style={{
-                color: "orange",
+                color: "#ff4d00",
                 fontSize: "40px",
                 paddingBottom: "20px",
               }}
             >
-              Lose Weight
+              LOSE WEIGHT
             </h2>
             <p style={{ paddingBottom: "10px" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
@@ -185,7 +185,7 @@ function Home() {
           <NavLink
             to="Exercises"
             className={({ isActive }) =>
-              isActive ? "activeStyle" : "inactiveStyle"
+              isActive ? "activeStyle" : "loginInactiveStyle"
             }
           >
             Begin Now!
@@ -196,7 +196,7 @@ function Home() {
           <NavLink
             to="Exercises"
             className={({ isActive }) =>
-              isActive ? "activeStyle" : "inactiveStyle"
+              isActive ? "activeStyle" : "loginInactiveStyle"
             }
           >
             Begin Now!

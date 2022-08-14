@@ -97,7 +97,7 @@ section {
   justify-content: center;
 }
 .container-grid {
-  box-shadow: 0px 2px 8px 0px black;
+  box-shadow: 0px 2px 8px 0px gray;
   text-align: center;
   border-radius: 1rem;
   position: relative;

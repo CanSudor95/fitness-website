@@ -36,7 +36,7 @@
   text-shadow: 3px 3px #000000;
 }
 .header .content1 b {
-  color: orange;
+  color: #ff4d00;
 }
 /* END OF HEADER CONTENT*/
 
@@ -52,7 +52,7 @@
 }
 .about h2 {
   font-size: 40px;
-  color: orange;
+  color: #00ced1;
   font-weight: bold;
 }
 .about h3 {
@@ -75,7 +75,7 @@
   align-items: center;
 }
 .info-logo {
-  border: 6px solid orange;
+  border: 6px solid #ff4d00;
   border-radius: 50%;
   padding: 10px;
   height: auto;
@@ -86,16 +86,17 @@
 }
 .info-text h3 {
   padding-bottom: 10px;
-  color: orange;
+  color: #00ced1;
 }
 .info-text p {
   font-size: 20px;
+  color: white;
 }
 /*END OF ABOUT CONTENT*/
 
 /*START OF SIGNUP CONTENT*/
 .SignUp {
-  background-color: orange;
+  background-color: #ff9a00;
   height: auto;
   padding: 20px 0;
 
