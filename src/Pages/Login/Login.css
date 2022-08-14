@@ -72,11 +72,12 @@ input[type="submit"]:hover {
   align-items: center;
 }
 .LoggedInBarButton button {
-  background-color: #008b8b;
+  background-color: #ff9a00;
   border-radius: 10px;
   padding: 5px 10px;
   box-shadow: 0px 2px 8px 0px black;
 }
 .LoggedInBarButton button:hover {
   transform: scale(1.1);
+  background-color: #ff4d00;
 }
