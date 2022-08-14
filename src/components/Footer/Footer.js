@@ -6,33 +6,66 @@ function Footer() {
   return (
     <div className="main-footer">
       <div className="container">
-        <div>
-          <h2>Contact Us</h2>
-          <hr />
-        </div>
+        <hr />
+
         <div className="row">
           {/* Column1 */}
           <div className="col">
             <ul className="list-unstyled">
-              <li>123-45-67</li>
-              <li>Istanbul, Turkey</li>
-              <li>Atasehir Ataturk Street</li>
+              <b>MAIN LINKS</b>
+              <li>
+                <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+                  Home
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="Contact"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="Login"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Login
+                </Link>
+              </li>
             </ul>
           </div>
           {/* Column2 */}
           <div className="col">
             <ul className="list-unstyled">
-              <li></li>
-              <li>Istanbul, Turkey</li>
-              <li>Atasehir Ataturk Street</li>
+              <b>EXERCISES</b>
+              <li>
+                <Link
+                  to="Exercises"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Exercises
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="MyExercises"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  My Exercises
+                </Link>
+              </li>
             </ul>
           </div>
           {/* Column3 */}
           <div className="col">
             <ul className="list-unstyled">
-              <li>123-45-67</li>
+              <b>CONTACT</b>
               <li>Istanbul, Turkey</li>
               <li>Atasehir Ataturk Street</li>
+              <li>(+90)123-45-67</li>
             </ul>
           </div>
         </div>

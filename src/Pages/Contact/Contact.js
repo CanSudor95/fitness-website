@@ -22,9 +22,14 @@ function Contact() {
           id="description"
           placeholder="Please type in any details you want to learn from our trainers..."
         />
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" onClick={myFunction} />
       </div>
     </div>
+  );
+}
+function myFunction() {
+  alert(
+    "Hello! Currently we cannot provide any help now. Thank you for your understanding."
   );
 }
 export default Contact;

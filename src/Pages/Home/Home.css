@@ -21,7 +21,8 @@
 }
 .header .content1 b {
   color: rgb(219, 150, 20);
-  text-shadow: 5px 5px #000000;
+  text-shadow: 1px 1px 5px #333;
+  font-size: 48px;
 }
 
 .header .content1 {

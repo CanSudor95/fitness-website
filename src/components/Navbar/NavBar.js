@@ -18,7 +18,7 @@ function NavBar({ toggle, LogOut }) {
             isActive ? "activeStyle" : "inactiveStyle"
           }
         >
-          Home
+          HOME
         </NavLink>
         <NavLink
           to="Exercises"
@@ -26,7 +26,7 @@ function NavBar({ toggle, LogOut }) {
             isActive ? "activeStyle" : "inactiveStyle"
           }
         >
-          Exercises
+          EXERCISES
         </NavLink>
 
         <NavLink
@@ -35,7 +35,7 @@ function NavBar({ toggle, LogOut }) {
             isActive ? "activeStyle" : "inactiveStyle"
           }
         >
-          My Exercises
+          MY EXERCISES
         </NavLink>
 
         <NavLink
@@ -44,7 +44,7 @@ function NavBar({ toggle, LogOut }) {
             isActive ? "activeStyle" : "inactiveStyle"
           }
         >
-          Contact
+          CONTACT US
         </NavLink>
         {toggle ? (
           <NavLink
@@ -53,7 +53,7 @@ function NavBar({ toggle, LogOut }) {
               isActive ? "activeStyle" : "inactiveStyle"
             }
           >
-            Login
+            LOGIN
           </NavLink>
         ) : (
           <button

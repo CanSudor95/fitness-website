@@ -10,7 +10,7 @@ function Home() {
         <div className="content1">
           <div>
             <p>
-              It's Time to <b>UNLEASH</b> the Beast Inside of You
+              IT'S TIME TO <b>UNLEASH</b> THE BEAST INSIDE OF YOU
             </p>
             {/* <NavLink
               to="Login"
