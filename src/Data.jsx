@@ -40,8 +40,8 @@ const exercises = [
     toggled: false,
     name: "Pushup",
     bodyPart: "Chest",
-    equipment: "Dumbell",
-    difficulty: "Beginner",
+    equipment: "None",
+    difficulty: "Advanced",
     image:
       "https://i.pinimg.com/564x/01/cc/29/01cc29f00118392a0d29a2f178e4677a.jpg",
     description:
@@ -53,7 +53,7 @@ const exercises = [
     name: "Front Squats",
     bodyPart: "Legs",
     equipment: "Dumbell",
-    difficulty: "Beginner",
+    difficulty: "Advanced",
     image:
       "https://i.pinimg.com/564x/8d/85/4e/8d854e73b66aa9a699c3886bcacded3c.jpg",
     description:
@@ -125,7 +125,7 @@ const exercises = [
     name: "Lying Dumbell Shoulder Raise",
     bodyPart: "Chest",
     equipment: "Dumbell",
-    difficulty: "Beginner",
+    difficulty: "Advanced",
     image:
       "https://i.pinimg.com/564x/7e/54/da/7e54da988578fce3d18f4189de25dc17.jpg",
     description:
@@ -137,7 +137,7 @@ const exercises = [
     name: "Jumping Squat",
     bodyPart: "Legs",
     equipment: "Nothing",
-    difficulty: "Beginner",
+    difficulty: "Advanced",
     image:
       "https://i.pinimg.com/564x/15/a7/94/15a7943a09c14dc8fd24478c84fb282c.jpg",
     description:
@@ -209,7 +209,7 @@ const exercises = [
     name: "Russian Swing",
     bodyPart: "Abs",
     equipment: "Nothing",
-    difficulty: "Beginner",
+    difficulty: "Advanced",
     image:
       "https://i.pinimg.com/564x/35/cd/6e/35cd6e2964b66ee87db1b544db2cc8e9.jpg",
     description:
@@ -221,7 +221,7 @@ const exercises = [
     name: "Cross Leg Swing",
     bodyPart: "Legs",
     equipment: "Nothing",
-    difficulty: "Beginner",
+    difficulty: "Advanced",
     image:
       "https://i.pinimg.com/564x/2f/b1/9a/2fb19a077b13d9e25ac0d983a1d6a03e.jpg",
     description:

@@ -13,7 +13,7 @@ function MyExercises({ exerciseList, handleRemoveExercise, toggleButton }) {
           <div className="no-item">
             <div>
               <h2>
-                You do not have any selected exercise yet. Please select
+                You do not have any selected exercise yet. Please select an
                 exercise.
               </h2>
               <Link

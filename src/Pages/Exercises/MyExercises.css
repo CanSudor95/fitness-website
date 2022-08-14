@@ -1,3 +1,10 @@
+.cart-items {
+  min-height: 500px;
+}
+.cart-items-header h1 {
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
 .no-item {
   display: flex;
   text-align: center;
@@ -6,22 +13,29 @@
   min-height: 200px;
 }
 .no-item button {
-  background-color: orange;
+  background-color: #ff9a00;
+  border: 2px solid black;
   font-size: 32px;
   padding: 10px 10px;
   margin: 10px 0;
   border-radius: 10px;
   color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.846);
+}
+.no-item button:hover {
+  border: 2px solid white;
+  background-color: #ff4d00;
+  font-size: 34px;
+  padding: 11px 11px;
 }
 .table {
   text-align: center;
+  color: white;
 }
 .cart-items {
   margin-top: 100px;
 }
-.cart-items-header {
-  background-color: white;
-}
+
 .remove-column {
   display: flex;
   text-align: center;

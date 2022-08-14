@@ -3,14 +3,46 @@ section {
   width: 100%;
   height: 100%;
   padding: 60px 30px;
-  background-color: grey;
+  background-color: #080808;
 }
 .head {
   padding: 30px 0;
 }
+.exercise-head {
+  display: flex;
+  justify-content: space-between;
+}
+.exercise-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ced1;
+  /* color: #41df90; */
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 2rem;
+  padding-left: 15px;
+}
+/* .cool-corner {
+  border-bottom: 100px solid #41df90;
+  border-right: 100px solid black;
+} */
+.Categoriser {
+  display: flex;
+  margin-right: 10px;
+}
+.filter-button {
+  background-color: #080808;
+  color: white;
+  margin: 0 5px;
+  padding: 0 0.5rem;
+  border: 1px solid #080808;
+}
 
 .search-bar {
   margin: 10px 0;
+  background-color: #313131;
 }
 
 .exercises article {
@@ -69,8 +101,14 @@ section {
   text-align: center;
   border-radius: 1rem;
   position: relative;
-  background-color: rgb(190, 185, 185);
+  background-color: #008b8b;
+  /*  background-color: rgb(190, 185, 185); */
   padding: 0 0.5rem;
+  margin: 0.2rem;
+}
+.container-grid:hover {
+  transform: scale(1.1);
+  z-index: +1;
 }
 .container--body {
   display: flex;
@@ -90,6 +128,11 @@ section {
 }
 .left {
   margin-right: 20px;
+  color: white;
+}
+.left b {
+  ffont-family: "Montserrat", sans-serif;
+  color: #333;
 }
 
 .right {
@@ -99,25 +142,31 @@ section {
 }
 
 .button-add {
-  background-color: green;
-  border-radius: 5px;
+  background-color: #483d8b;
+  border-radius: 10px;
   color: white;
   font-weight: bold;
+  padding: 5px 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.472);
 }
 .button-add:hover {
   background-color: white;
-  color: green;
+  color: #483d8b;
+  transform: scale(1.1);
 }
 .button-remove {
-  background-color: red;
-  border-radius: 5px;
+  background-color: #872657;
+  border-radius: 10px;
   color: white;
   font-weight: bold;
+  padding: 5px 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.472);
 }
 
 .button-remove:hover {
   background-color: white;
   color: red;
+  transform: scale(1.1);
 }
 @media screen and (max-width: 1000px) {
   .wrapper-grid {

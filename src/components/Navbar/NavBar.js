@@ -6,10 +6,10 @@ function NavBar({ toggle, LogOut }) {
   return (
     <nav className="nav">
       <div>
-        <NavLink to="/" className="nav-brand">
+        {/* <NavLink to="/" className="nav-brand">
           <img src="images/icons8-workout-64.png" alt="" />
-          <p>THE GYM</p>
-        </NavLink>
+          <p className="brand">THE GYM</p>
+        </NavLink> */}
       </div>
       <div className="nav-child">
         <NavLink
@@ -53,7 +53,7 @@ function NavBar({ toggle, LogOut }) {
               isActive ? "activeStyle" : "inactiveStyle"
             }
           >
-            Login/SignUp
+            Login
           </NavLink>
         ) : (
           <button

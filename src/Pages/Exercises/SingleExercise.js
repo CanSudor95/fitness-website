@@ -28,7 +28,14 @@ function SingleExercise() {
         <h2>Description</h2> <hr />
         {description}
       </div>
-      <Link to="/Exercises">Back to Exercises Page</Link>
+      <button className="button">
+        <Link
+          to="/Exercises"
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          Back to Exercises Page
+        </Link>
+      </button>
     </div>
   );
 }

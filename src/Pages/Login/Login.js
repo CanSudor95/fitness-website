@@ -52,15 +52,17 @@ function Login({ logIn, error, LogInToggle, toggle, LogOut }) {
           <input type="submit" value="Login" />
         </form>
       ) : (
-        <div className="loginbar" onSubmit={submitHandler}>
+        <div className="loggedIn-bar" onSubmit={submitHandler}>
           <p>Welcome {details.email}</p>
-          <button
-            onClick={(e) => {
-              LogOut();
-            }}
-          >
-            Log Out
-          </button>
+          <div className="LoggedInBarButton">
+            <button
+              onClick={(e) => {
+                LogOut();
+              }}
+            >
+              Log Out
+            </button>
+          </div>
         </div>
       )}
     </div>

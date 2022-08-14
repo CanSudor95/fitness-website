@@ -51,76 +51,81 @@ function Exercises({
           <div className="content1">
             <div>
               <p>
-                <b>GET</b> FIT
+                <b>GET FIT</b>
               </p>
-              <p style={{ color: "orange" }}>
-                <b>GET</b> GOING
+              <p style={{ color: "#00ced1" }}>
+                <b>GET GOING</b>
               </p>
             </div>
           </div>
         </div>
-        <button
-          type="button"
-          className="btn btn-light"
-          onClick={() => setExerciseList(fullExerciseList)}
-        >
-          All
-        </button>
-        <button
-          type="button"
-          className="btn btn-light"
-          onClick={() => filterResult("Abs")}
-        >
-          Abs
-        </button>
-        <button
-          type="button"
-          className="btn btn-light"
-          onClick={() => filterResult("Arms")}
-        >
-          Arms
-        </button>
-        <button
-          type="button"
-          className="btn btn-light"
-          onClick={() => filterResult("Chest")}
-        >
-          Chest
-        </button>
-        <button
-          type="button"
-          className="btn btn-light"
-          onClick={() => filterResult("Legs")}
-        >
-          Legs
-        </button>
-        <button
-          type="button"
-          className="btn btn-light"
-          onClick={() => filterResult("Full Body")}
-        >
-          Full Body
-        </button>
-        {/* Button Filter Finishes
-        
-        
-        */}
-        {/* Search Bar Part Begins 
-        
-        
-        */}
-        <input
-          type="text"
-          className="search-bar"
-          placeholder="Search..."
-          onChange={(e) => {
-            setSearchTerm(e.target.value.toLowerCase());
-            searchFilter();
-          }}
-        />
-        {/* Search Bar Part Ends */}
-      </div>
+        {/* Search Bar Part Begin */}
+        <div className="exercise-head">
+          <div className="exercise-title">
+            <p>EXERCISES</p>
+            {/* <div className="cool-corner"></div> */}
+          </div>
 
+          <div className="Categoriser">
+            <input
+              type="text"
+              className="search-bar"
+              placeholder="Search..."
+              onChange={(e) => {
+                setSearchTerm(e.target.value.toLowerCase());
+                searchFilter();
+              }}
+            />
+            {/* Search Bar Part Ends */}
+            <button
+              type="button"
+              className="filter-button"
+              onClick={() => setExerciseList(fullExerciseList)}
+            >
+              All
+            </button>
+            <button
+              type="button"
+              className="filter-button"
+              onClick={() => filterResult("Abs")}
+            >
+              Abs
+            </button>
+            <button
+              type="button"
+              className="filter-button"
+              onClick={() => filterResult("Arms")}
+            >
+              Arms
+            </button>
+            <button
+              type="button"
+              className="filter-button"
+              onClick={() => filterResult("Chest")}
+            >
+              Chest
+            </button>
+            <button
+              type="button"
+              className="filter-button"
+              onClick={() => filterResult("Legs")}
+            >
+              Legs
+            </button>
+            <button
+              type="button"
+              className="filter-button"
+              onClick={() => filterResult("Full Body")}
+            >
+              FullBody
+            </button>
+            {/* Button Filter Finishes
+        
+        
+        */}
+          </div>
+        </div>
+      </div>
       {/* <div className="row row-cols-1 row-cols-md-4 g-3 ">
         {exerciseList.map((exercise, key) => {
           const { id, image, name, difficulty, bodyPart } = exercise;
@@ -218,7 +223,7 @@ function Exercises({
                         toggleButton(key);
                       }}
                     >
-                      Remove Exercise
+                      Remove
                     </button>
                   ) : (
                     <button
@@ -228,7 +233,7 @@ function Exercises({
                         toggleButton(key);
                       }}
                     >
-                      Add Exercise
+                      Add
                     </button>
                   )}
                 </div>
