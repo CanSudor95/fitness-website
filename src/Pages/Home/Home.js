@@ -105,7 +105,7 @@ function Home() {
             </p>
           </div>
           <input type="email" placeholder="your email address" />
-          <input type="button" value={"SignUp"} />
+          <input type="button" value={"SignUp"} onClick={myFunction} />
         </div>
       </div>
 
@@ -208,5 +208,9 @@ function Home() {
     </section>
   );
 }
-
+function myFunction() {
+  alert(
+    "Hello! Currently we cannot provide any help now. Thank you for your understanding."
+  );
+}
 export default Home;
