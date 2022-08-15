@@ -1,9 +1,17 @@
-Libraries that needed to be Installed:
+# Welcome 
 
-react-router-6:
+Welcome to my project, this is my first (kinda) big React Project. 
+
+In this project, I used features that I've learned in the BootCamp program and also feauteres by searching online.
+
+This is a fitness website, which may have bad design (both UI and UX but please bear with me <3 ) where you can, "login", search filter and choose exercises.
+
+## Libraries that needed to be Installed:
+
+**react-router-6:**
 npm install react-router-dom@6
 
-Framer-motion:
+**Framer-motion:**
 npm install framer-motion
 
 
@@ -48,7 +56,11 @@ In the login screen the given email address and password is needed to be used fo
 ![Screenshot7](https://github.com/CanSudor95/fitness-website/blob/master/public/ScreenShots/ScreenShot8.png?raw=true)
   if either email or password is written wrong, an error message will be shown (**_conditional rendering_** method is used).
 ![Screenshot7](https://github.com/CanSudor95/fitness-website/blob/master/public/ScreenShots/ScreenShot9.png?raw=true) 
-  
-  
-  
-  
+ 
+Once login, the text of **Login** button will be changed to **Log out** and you can "log out" (yes its a dummy login/logout).
+ ![Screenshot7](https://github.com/CanSudor95/fitness-website/blob/master/public/ScreenShots/ScreenShot10.png?raw=true) 
+ 
+ 
+ # Last but not least...
+ 
+ ** THANK YOU SO MUCH FOR TAKING YOUR TIME AND READING THIS FILE "" 
