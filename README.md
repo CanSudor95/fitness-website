@@ -63,4 +63,4 @@ Once login, the text of **Login** button will be changed to **Log out** and you 
  
  # Last but not least...
  
- ** THANK YOU SO MUCH FOR TAKING YOUR TIME AND READING THIS FILE "" 
+ ** THANK YOU SO MUCH FOR TAKING YOUR TIME AND READING THIS FILE ** 
